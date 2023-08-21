@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books Hub</title>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body class="container">
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="nav-heading">All Awesome Books</h1>
+        <ul class="nav-links">
+          <li class="list-page">List</li>
+          <li>|</li>
+          <li class="add-page">Add new</li>
+          <li>|</li>
+          <li class="contact-page">Contact</li>
+        </ul>
+      </nav>
+      <div class="date-input">
+        <p class="date"></p>
+        <p class="time"></p>
+      </div>
+    </header>
+    <section>
+      <ul id="bookList">
+        <h3>All Awesome Books</h3>
+      </ul>
+      <form class="form" action="#">
+        <h3>Add a new books</h3>
+        <input
+          type="text"
+          id="bookTitle"
+          class="bookHeading"
+          placeholder="Enter book title"
+        />
+        <input
+          type="text"
+          id="authorName"
+          class="orator"
+          placeholder="Enter author name"
+        />
+        <button id="add-btn">Add Book</button>
+        <span class="feedback"></span>
+      </form>
+    </section>
+    <section class="contact">
+      <h2 class="heading">Contact Information</h2>
+      <p class="reach-out">
+        Do you have any questions or do you want to just say "Hello"? <br />
+        You can reach out to us!
+      </p>
+      <ul class="reach-out-list">
+        <li>Our email: efmomoh25@mail.com</li>
+        <li>Our phone number: +2317593475</li>
+        <li>Our address: Street Number, City, Country</li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <div class="copyright">Copyright &copy; EFM Books Hub Licensed.</div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
