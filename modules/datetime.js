@@ -1,13 +1,13 @@
-// datetime.js
-export default function updateDateTime() {
-  const dateElement = document.querySelector('.date');
-  const timeElement = document.querySelector('.time');
+import { DateTime } from './luxon.min.js';
 
-  const currentDate = new Date();
+const dateTime = document.querySelector('.date');
+const setInitialTime = () => {
+  const c = DateTime.now();
+  const getCurrentTime = () => `${c.hour}:${c.minute}:${c.second}:${c.millisecond}`;
+  const dayMonthYear = {
+    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric',
+  };
+  dateTime.innerHTML = `${c.setLocale('en-US').toLocaleString(dayMonthYear)}, <span>${getCurrentTime()}</span>`;
+};
 
-  const formattedDate = currentDate.toDateString();
-  const formattedTime = currentDate.toLocaleTimeString();
-
-  dateElement.textContent = formattedDate;
-  timeElement.textContent = formattedTime;
-}
+export default setInitialTime;
