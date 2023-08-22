@@ -114,7 +114,7 @@ To run the project,
 
 ## 🤝 contributing <a name="contributing"></a>
 
-You are welcome, and click <a href="https://github.com/efmomoh/my-books/issues">here</a> for contribution, issues, and feature request 🙏
+You are welcome, and click <a href="https://github.com/efmomoh/my-books/issues/2">here</a> for contribution, issues, and feature request 🙏
 
 ## ⭐️ Show your support <a name="support"></a>
 
