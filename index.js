@@ -1,6 +1,6 @@
-// main.js
+// index.js
 import { initializeBookManager } from './modules/bookManager.js';
-import updateDateTime from './modules/datetime.js';
+import setInitialTime from './modules/datetime.js';
 import './modules/navigation.js';
 
 const bookDirectorWithId = initializeBookManager();
@@ -8,7 +8,7 @@ bookDirectorWithId.updateBookList();
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeBookManager();
-  updateDateTime();
+  setInitialTime();
 });
 
 // Load data from localStorage when the window is loaded
